@@ -46,4 +46,22 @@ public class Point {
     }
 
     //method quadrant
+    public String quadrant() {
+        String quadrant = null;
+
+        if (x == 0 && y == 0) {
+            quadrant = "on origin";
+        } else if (x > 0 && y > 0) {
+            quadrant = "I";
+        } else if (x < 0 && y > 0) {
+            quadrant = "I";
+        } else if (x < 0 && y < 0) {
+            quadrant = "III";
+        } else if (x > 0 && y < 0) {
+            quadrant = "IV";
+        } else {
+            quadrant = "on axis";
+        }
+        return quadrant;
+    }
 }
